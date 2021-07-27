@@ -1,0 +1,35 @@
+<div id="app">
+    <ul>
+        <li v-for="product in products"> <!--iteration over products-->
+            
+           <input type="number" v-model.number="product.qty"> <!--input box that will handles qty-->
+           {{ product.name }}
+           <span v-if="product.qty==0"><!-- condition over products-->
+               - OUT OF STOCK
+           </span>
+           <button @click = "product.qty+=1">Add</button>
+        </li>
+    </ul>
+    <h1>Total: {{totalProducts}} </h1>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+ <!--include the vue library-->
+<script>
+    const app= new Vue({ /**create a vue instance*/   
+        el: '#app', /** plug into our root element with ID of app*/
+        data: {
+            
+            "products": [ {"name": "soap", "qty": 1}] /** an empty arr because we will use api to get this data */
+            
+        },
+        computed: { /*computed property which returns total products*/
+            totalProducts() {
+                return this.products.reduce((sum,product) => {
+                    return sum+product.qty
+                },0)
+            }
+        }
+
+    })
+</script>

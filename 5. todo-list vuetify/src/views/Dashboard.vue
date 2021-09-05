@@ -9,7 +9,7 @@
         </v-btn>
         <v-btn small flat color="grey" @click="sortBy('person')">
           <v-icon left small>mdi-account-circle</v-icon>
-          <span class="caption text-lowercase">By project name</span>
+          <span class="caption text-lowercase">By person name</span>
         </v-btn>
       </v-layout>
       <v-card

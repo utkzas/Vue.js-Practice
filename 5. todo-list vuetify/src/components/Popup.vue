@@ -28,7 +28,7 @@
 
 <script>
 import format from 'date-fns/format'
-//import db from '@/fb'
+//import db from '@/fb' this caused error
 
 export default {
   data() {

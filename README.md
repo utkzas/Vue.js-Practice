@@ -1,4 +1,4 @@
-###vue.js introduction (vuemastery)
+### vue.js introduction (vuemastery)
 Lessons
 1. The Vue Instance
 2. Attribute Binding
@@ -44,11 +44,11 @@ Create a Notification Message component
 25 - Datepickers
 26 - Simple Form Validation
 
-###Vuex
+### Vuex
 1. learned how to break your Vuex store into modules.
 2. got to know when and how to use getters, mutations, actions and, how to split your Store with modules
 
-###node.js-mysql-mvc
+### node.js-mysql-mvc
 1. install MySQL so that we can connect our back-end API to a database
 2. install Postman and make a GET and POST request.
 3. create a simple Node Express API to handle a GET request
@@ -56,7 +56,7 @@ Create a Notification Message component
 5. learn how to connect our Node API to a MySQL database
 6. handle Create, Read, Update and Delete requests for a Node MySQL REST MVC API
 
-###passport.js jwt authentication
+### passport.js jwt authentication
 1. setup our node.js express server for our role based authentication rest api application.
 2. connected our node.js express server to the mongoDB database for our role based authentication application.
 also created User's schema to register and login with JWT.
